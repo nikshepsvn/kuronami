@@ -5,10 +5,10 @@ import XCTest
 /// the test host shares the app's.
 @MainActor
 final class SumiTests: XCTestCase {
-    func testButtonFillsWhenTheSumiNeedsYouOrHasAnUnseenReply() {
+    func testButtonEmphasizesWhenSumiNeedsYouOrHasAnUnseenReply() {
         let mood = KuronamiMark.sumiMood
         XCTAssertEqual(mood(.idle, false, false), .resting)
-        XCTAssertEqual(mood(.working, true, false), .working, "working shows the rising sun even with an old unread reply")
+        XCTAssertEqual(mood(.working, true, false), .working, "working animates the mark even with an old unread reply")
         XCTAssertEqual(mood(.needsInput("ok?"), false, true), .needsYou, "blocked on you shows even with the panel open")
         XCTAssertEqual(mood(.idle, true, false), .needsYou, "a reply nobody has opened")
         XCTAssertEqual(mood(.idle, true, true), .resting, "the panel is open, so the reply is being read")

@@ -89,11 +89,11 @@ enum Ink {
     /// Night's chrome: near-black, see-through. Sidebar, inspector and canvas all take it, so
     /// they read as one sheet; tile headers sit on the canvas and show it.
     static let night = NSColor(srgbRed: 0.031, green: 0.031, blue: 0.031, alpha: 0.72)
-    /// Bone, the paper of the icon's print.
+    /// Bone, the interface's primary text color.
     static let text = NSColor(srgbRed: 0.929, green: 0.910, blue: 0.867, alpha: 1)
     static let muted = NSColor(srgbRed: 0.620, green: 0.600, blue: 0.565, alpha: 1)
     static let faint = NSColor(srgbRed: 0.420, green: 0.404, blue: 0.384, alpha: 1)
-    /// Shu (vermilion), the icon's sun: the one primary action in view, and the brand. Never
+    /// Shu (vermilion), Tako's red: the one primary action in view, and the brand. Never
     /// focus or selection: red around a terminal reads as an error.
     static let accent = NSColor(srgbRed: 0.851, green: 0.290, blue: 0.200, alpha: 1)
     /// Where focus is: the focused tile, drop targets, a split being dragged. Bone, half strength.
@@ -547,7 +547,7 @@ struct Hairline: View {
     var body: some View { Rectangle().fill(Tone.hairline).frame(height: Size.hairline) }
 }
 
-/// Tako's mark: the app icon itself (an ink octopus before a red sun), so the two always match.
+/// Tako's mark: the app icon itself, so the two always match.
 struct WaveMark: View {
     var body: some View {
         // Read from the bundle: NSApp.applicationIconImage can be a stale copy cached by macOS.
