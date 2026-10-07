@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/icon.png" width="128" height="128" alt="Tako icon: a black octopus with round eyes before a red sun">
+  <img src="docs/icon.png" width="128" height="128" alt="Tako icon: a red angular octopus with solid black eyes">
 </p>
 
 <h1 align="center">Tako</h1>

@@ -36,7 +36,7 @@ targets:
         buildPhase: resources
       - path: Resources/AppIcon.icns
         buildPhase: resources
-      # The icon's layers for Sumi's button: scripts/make-icon.sh
+      # Tako's mark and the agents' logos: scripts/make-icon.sh
       - path: Resources/Mark
         type: folder
         buildPhase: resources

@@ -318,8 +318,8 @@ private struct SumiButton: View {
     }
 }
 
-/// The mark, moving with Sumi's own state. It fills with the sun's color when the
-/// sumi is blocked on you, or has replied while its panel was closed.
+/// The mark, moving with Sumi's own state. It grows slightly when Sumi is blocked on
+/// you, or has replied while its panel was closed.
 private struct SumiMark: View {
     let sumi: TerminalSession?
     let isOpen: Bool
